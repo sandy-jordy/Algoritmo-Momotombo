@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema Momotombo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabView">
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="DataSetPage" name="DataSetPage">
+       <attribute name="title">
+        <string>DataSet</string>
+       </attribute>
+      </widget>
+      <widget class="DataSetDescription" name="DataSetDescription">
+       <attribute name="title">
+        <string>Descripción del DataSet</string>
+       </attribute>
+      </widget>
+      <widget class="DataSetBox" name="DataSetBox">
+       <attribute name="title">
+        <string>Diagrama de Caja</string>
+       </attribute>
+      </widget>
+      <widget class="DataSetHist" name="DataSetHist">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Histograma</string>
+       </attribute>
+      </widget>
+      <widget class="DataSetDetails" name="DataSetDetails">
+       <attribute name="title">
+        <string>A.N.O.V.A</string>
+       </attribute>
+      </widget>
+      <widget class="DataSetGraficador" name="DataSetGraficador">
+       <attribute name="title">
+        <string>Gráfico 3D</string>
+       </attribute>
+      </widget>
+      <widget class="DataSetPrediccion" name="DataSetPrediccion">
+       <attribute name="title">
+        <string>Predicción</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnCargar">
+        <property name="text">
+         <string>Cargar CSV</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnPredecir">
+        <property name="text">
+         <string>Entrenar y guardar Modelo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCompare">
+        <property name="text">
+         <string>Mostrar tabla A.N.O.V.A</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DataSetPage</class>
+   <extends>QWidget</extends>
+   <header>controller/datasetpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DataSetDescription</class>
+   <extends>QWidget</extends>
+   <header>controller/datasetdescription.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DataSetBox</class>
+   <extends>QWidget</extends>
+   <header>controller/datasetbox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DataSetHist</class>
+   <extends>QWidget</extends>
+   <header>controller/datasethist.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DataSetDetails</class>
+   <extends>QWidget</extends>
+   <header>controller/datasetdetails.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DataSetPrediccion</class>
+   <extends>QWidget</extends>
+   <header>controller/datasetprediccion.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DataSetGraficador</class>
+   <extends>QWidget</extends>
+   <header>controller/datasetgraficador.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
